@@ -1,0 +1,129 @@
+body {
+    background-color: #6e0fcf;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.inline {
+    display: inline-block;
+}
+.sl {
+    font-size: 40px;
+    margin: 40px;
+    height: 600px;
+}
+.sl__face {
+    margin-left: 2.2em;
+    width: 6em;
+}
+.sl__circle {
+    border-radius: 50%;
+    background-color: #bbb;
+    width: 10em;
+    height: 10em;
+    position: absolute;
+}
+.sl__circle--1 {
+    margin-left: 0em;
+    background-color: #ffc21f;
+    z-index: 10;
+}
+.sl__circle--2 {
+    margin-left: 1.8em;
+    background-color: #f0b10a;
+    z-index: 9;
+}
+.sl__circle--3 {
+    margin-left: 3.6em;
+    background-color: #d09701;
+    z-index: 8;
+}
+.sl__circle--4 {
+    margin-left: 5.4em;
+    background-color: #b78500;
+    z-index: 7;
+}
+.sl-pixel {
+    height: 1em;
+    width: 1em;
+    background-color: #6e0fcf;
+    margin: 0;
+    margin-left: -0.25em;
+    padding: 0;
+}
+.sl__eye--left {
+    display: inline-block;
+    float: left;
+    margin-top: 1.8em;
+    margin-left: 1em;
+
+}
+.sl__eye--right {
+    display: inline-block;
+    float: left;
+    margin-top: 1.8em;
+    margin-left: 2em;
+
+}
+.sl__mouth--main {
+    display: inline-block;
+    margin-left: 1em;
+    margin-top: 2em;
+    height: 1em;
+}
+.sl__mouth--sad {
+    margin-left: 0em;
+    margin-top: -0.27em;
+}
+.sl__mouth--sad .sl__2 {
+    margin-left: 3.75em;
+}
+.sl-sadlan {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.4em;
+    font-weight: 700;
+    margin-top: 3em;
+    position: absolute;
+}
+.sl-sadlan .sl-eight {
+    font-weight: 100;
+}
+
+.sadlan-logo {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.center {
+    margin: 40px auto 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.date {
+    font-size: 30px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    body {
+        overflow: hidden;
+    }
+    .sadlan-logo {
+        width: 98%;
+    }
+    .sl {
+        font-size: 19px;
+        height: 300px;
+    }
+    .center {
+        margin: 0;
+    }
+    .text-center {
+        text-align: left;
+    }
+    .date {
+        font-size: 20px;
+    }
+}
