@@ -1,7 +1,10 @@
 body {
-    background-color: #6e0fcf;
+    background-color: #fff;
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    top:0;
+    margin-top:0;
+    padding-top:0;
 }
 .inline {
     display: inline-block;
@@ -92,10 +95,11 @@ body {
 .sadlan-logo {
     width: 620px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 .center {
-    margin: 40px auto 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 .text-center {
@@ -106,12 +110,86 @@ body {
     font-size: 30px;
 }
 
-@media only screen and (max-device-width: 480px) {
-    body {
-        overflow: hidden;
+
+.hero {
+    background-color: #6e0fcf;
+}
+
+@-webkit-keyframes slidein {
+    0% {
+        height: 100vh;
     }
+
+    100% {
+        height: 90vh;
+    }
+}
+
+.hero__inside {
+    height: 100vh;
+    -webkit-animation: 1s 1s slidein ease-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+}
+
+.part-2 {
+    margin-top:5px;
+    height: 90vh;
+    padding-top: 60px;
+    background-color: #fff;
+    background: url(../images/sadlan-6-blur-1.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.card {
+    padding: 40px;
+    width: 600px;
+    margin: 60px auto 0 auto;
+    background-color: #fff;
+    color: #000;
+}
+
+.icon-circle {
+    background-color: #fff;
+    border-radius: 50%;
+    color: #444;
+    margin: 15px;
+    font-size: 30px;
+}
+
+
+.arrow-scroll {
+    position: absolute;
+    bottom: -10vh;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    left: 48%;
+    -webkit-animation: 1s 1s appear ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes appear {
+    0% {
+        bottom: -10vh;
+    }
+
+    100% {
+        bottom: 10vh;
+    }
+}
+
+
+@media (max-width: 480px) {
     .sadlan-logo {
         width: 98%;
+
     }
     .sl {
         font-size: 19px;
@@ -123,6 +201,33 @@ body {
     .text-center {
         text-align: left;
     }
+    .date {
+        font-size: 20px;
+    }
+    .card {
+        width: 90%;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width:481px) and (max-width: 980px) {
+    .sadlan-logo {
+        width: 475px;
+
+    }
+
+    .sl {
+        font-size: 30px;
+    }
+
+    .center {
+        margin: 0;
+    }
+
+    .text-center {
+        text-align: left;
+    }
+
     .date {
         font-size: 20px;
     }
