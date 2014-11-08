@@ -26,24 +26,88 @@ body {
     position: absolute;
 }
 .sl__circle--1 {
-    margin-left: 0em;
+    margin-left: 5.4em;
     background-color: #ffc21f;
     z-index: 10;
+    -webkit-animation: 1s 0s sl__circle--1 ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sl__circle--1 {
+    0% {
+        margin-left: 0em;
+    }
+
+    50% {
+        margin-left: 5.4em;
+    }
+
+    100% {
+        margin-left: 0em;
+    }
 }
 .sl__circle--2 {
-    margin-left: 1.8em;
+    margin-left: 5.4em;
     background-color: #f0b10a;
     z-index: 9;
+    -webkit-animation: 1s 0s sl__circle--2 ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sl__circle--2 {
+    0% {
+        margin-left: 0em;
+    }
+
+    50% {
+        margin-left: 5.4em;
+    }
+
+    100% {
+        margin-left: 1.8em;
+    }
 }
 .sl__circle--3 {
-    margin-left: 3.6em;
+    margin-left: 5.4em;
     background-color: #d09701;
     z-index: 8;
+    -webkit-animation: 1s 0s sl__circle--3 ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sl__circle--3 {
+    0% {
+        margin-left: 0em;
+    }
+
+    50% {
+        margin-left: 5.4em;
+    }
+
+    100% {
+        margin-left: 3.6em;
+    }
 }
 .sl__circle--4 {
     margin-left: 5.4em;
     background-color: #b78500;
     z-index: 7;
+    -webkit-animation: 1s 0s sl__circle--4 ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes sl__circle--4 {
+    0% {
+        margin-left: 0em;
+    }
+
+    50% {
+        margin-left: 5.4em;
+    }
+
+    100% {
+        margin-left: 5.4em;
+    }
 }
 .sl-pixel {
     height: 1em;
@@ -74,7 +138,7 @@ body {
     height: 1em;
 }
 .sl__mouth--sad {
-    margin-left: 0em;
+    margin-left: 0;
     margin-top: -0.27em;
 }
 .sl__mouth--sad .sl__2 {
@@ -84,7 +148,7 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-size: 3.4em;
-    font-weight: 700;
+    font-weight: 100;
     margin-top: 3em;
     position: absolute;
 }
@@ -121,7 +185,7 @@ body {
     }
 
     100% {
-        height: 90vh;
+        height: 96vh;
     }
 }
 
@@ -163,6 +227,10 @@ body {
     font-size: 30px;
 }
 
+.text-center {
+    tex-align: center;
+}
+
 
 .arrow-scroll {
     position: absolute;
@@ -171,7 +239,7 @@ body {
     height: 60px;
     margin: 0 auto;
     left: 48%;
-    -webkit-animation: 1s 1s appear ease-out;
+    -webkit-animation: 0.5s 2s appear ease-out;
     -webkit-animation-fill-mode: forwards;
 }
 
@@ -230,5 +298,21 @@ body {
 
     .date {
         font-size: 20px;
+    }
+}
+
+.animation-fade-in {
+    opacity: 0;
+    -webkit-animation: 2s 1.3s ani-fade-in linear;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ani-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
